@@ -1,0 +1,10 @@
+#!/bin/bash
+
+exec 3< /etc/passwd
+exec 4< /etc/hosts
+
+while read l1 <&3 && read l2 <&4
+do
+    echo "$l1"
+    echo "$l2"
+done
