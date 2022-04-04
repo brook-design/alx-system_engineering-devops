@@ -1,5 +1,5 @@
 #!/bin/bash
-filename='/etc/passwd'
+filename='/etc/passwd.txt'
 n=1
 while read line; do
 # reading each line
