@@ -1,0 +1,8 @@
+#!/bin/bash
+FILE="$iacta.txt"
+LINE_NO=$3
+i=0
+while read line; do
+  i=$(( i + 1 )
+  test $i = $LINE_NO && echo "$line";
+done <"$FILE"
